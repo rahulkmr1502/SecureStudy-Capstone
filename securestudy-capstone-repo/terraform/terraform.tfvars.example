@@ -1,0 +1,5 @@
+# copy to terraform.tfvars (git-ignored) and fill in
+admin_ip_cidr   = "203.0.113.4/32"
+alert_email     = "you@example.com"
+certificate_arn = "arn:aws:acm:ap-south-1:111122223333:certificate/REPLACE-ME"
+bucket_name     = "securestudy-yourname-2026"

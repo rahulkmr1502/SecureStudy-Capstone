@@ -1,0 +1,20 @@
+mutated copy: 29 failed checks (390 passed)
+
+   1  CAUGHT  RDS publicly accessible   (CKV_AWS_17)
+   2  CAUGHT  RDS storage unencrypted   (CKV_AWS_16)
+   3  CAUGHT  RDS single-AZ   (CKV_AWS_157)
+   4  CAUGHT  RDS deletion protection off   (CKV_AWS_293)
+   5  CAUGHT  RDS backups off   (CKV_AWS_133)
+   6  CAUGHT  IMDSv1 allowed   (CKV_AWS_79)
+   7  CAUGHT  ALB keeps invalid headers   (CKV_AWS_131)
+   8  CAUGHT  ALB deletion protection off   (CKV_AWS_150)
+   9  CAUGHT  App root volume unencrypted   (CUSTOM_AWS_002)
+  10  CAUGHT  S3 public access block off   (CKV_AWS_53, CKV_AWS_54, CKV_AWS_55, CKV_AWS_56)
+  11  CAUGHT  CloudTrail single region   (CKV_AWS_67)
+  12  CAUGHT  CloudTrail log validation off   (CKV_AWS_36)
+  13  CAUGHT  KMS rotation off   (CKV_AWS_7)
+  14  CAUGHT  App role allowed *:* on *   (CKV_AWS_1, CKV_AWS_49)
+  15  CAUGHT  SSH open to the world   (CKV_AWS_24)
+  16  CAUGHT  Database port open to the world   (CUSTOM_AWS_001)
+
+Checkov caught 16 of 16 injected defects

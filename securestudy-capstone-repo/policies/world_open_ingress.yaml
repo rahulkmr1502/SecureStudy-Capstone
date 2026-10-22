@@ -1,0 +1,16 @@
+metadata:
+  id: "CUSTOM_AWS_001"
+  name: "Security group ingress rules open to 0.0.0.0/0 must be port 443 only"
+  category: "NETWORKING"
+definition:
+  or:
+    - cond_type: attribute
+      resource_types: [aws_vpc_security_group_ingress_rule]
+      attribute: cidr_ipv4
+      operator: not_equals
+      value: "0.0.0.0/0"
+    - cond_type: attribute
+      resource_types: [aws_vpc_security_group_ingress_rule]
+      attribute: from_port
+      operator: equals
+      value: 443

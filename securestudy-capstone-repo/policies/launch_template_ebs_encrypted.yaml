@@ -1,0 +1,10 @@
+metadata:
+  id: "CUSTOM_AWS_002"
+  name: "Launch template EBS volumes must be encrypted"
+  category: "ENCRYPTION"
+definition:
+  cond_type: attribute
+  resource_types: [aws_launch_template]
+  attribute: block_device_mappings.*.ebs.*.encrypted
+  operator: equals
+  value: true
